@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>DevJournal - A Personal Tech Blog</title>
+  <meta name="description" content="A personal tech blog sharing tutorials, insights, and experiences about modern web development, CSS layouts, and software engineering.">
+  <link rel="canonical" href="index.html">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="index.html" class="logo" id="logo-link">DevJournal</a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="index.html" class="active" id="nav-home">Home</a></li>
+          <li><a href="posts/mastering-css-grids.html" id="nav-latest">Latest Post</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Two Column Layout: Sidebar + Article Feed -->
+    <main class="main-layout">
+      
+      <!-- Sidebar Column -->
+      <aside class="sidebar">
+        
+        <!-- Profile Card -->
+        <section class="profile-card" aria-label="About the Author">
+          <div class="profile-avatar" aria-hidden="true">👨‍💻</div>
+          <div class="profile-details">
+            <h2 class="profile-name">Alex Dev</h2>
+            <p class="profile-bio">Full-stack developer, open-source enthusiast, and designer. Writing about CSS, Node.js, and clean code architectures.</p>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="GitHub" id="social-github">GH</a>
+              <a href="#" class="social-btn" aria-label="Twitter" id="social-twitter">TW</a>
+              <a href="#" class="social-btn" aria-label="LinkedIn" id="social-linkedin">IN</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Popular Tags Widget -->
+        <section class="sidebar-widget" aria-labelledby="widget-tags-title">
+          <h3 class="widget-title" id="widget-tags-title">Explore Topics</h3>
+          <div class="tag-cloud">
+            <span class="tag">#css</span>
+            <span class="tag">#webdev</span>
+            <span class="tag">#responsive</span>
+            <span class="tag">#javascript</span>
+            <span class="tag">#node</span>
+          </div>
+        </section>
+
+      </aside>
+
+      <!-- Main Blog Feed Column (Ordered Descending by Published Date) -->
+      <section class="feed-section" aria-labelledby="feed-title">
+        
+        <header class="feed-header">
+          <h1 class="feed-title" id="feed-title">Latest Articles</h1>
+          <p class="feed-subtitle">Weekly tutorials and insights on software engineering and design.</p>
+        </header>
+
+        <div class="post-list">
+          
+          <!-- Post 2: CSS Grids (Newest - Published Aug 13, 2026) -->
+          <article class="post-card" id="post-card-css-grids">
+            <header class="post-meta">
+              <time datetime="2026-08-13" class="post-date">August 13, 2026</time>
+              <span class="post-read-time" aria-label="5 minutes read">⏱️ 5 min read</span>
+            </header>
+            <h2 class="post-card-title">
+              <a href="posts/mastering-css-grids.html" id="link-css-grids">Mastering CSS Grid: Building Responsive Layouts with Ease</a>
+            </h2>
+            <p class="post-excerpt">
+              CSS Grid is one of the most powerful layout tools at our disposal. In this tutorial, we will explore advanced grid patterns, auto-fitting layouts, and how to build responsive dashboards without a single media query.
+            </p>
+            <div class="post-tags" aria-label="Article tags">
+              <span class="tag">#css</span>
+              <span class="tag">#webdev</span>
+              <span class="tag">#responsive</span>
+            </div>
+            <a href="posts/mastering-css-grids.html" class="post-card-link" aria-label="Read full article on Mastering CSS Grid" id="read-css-grids">Read Article →</a>
+          </article>
+
+          <!-- Post 1: Welcome (Older - Published Aug 12, 2026) -->
+          <article class="post-card" id="post-card-welcome">
+            <header class="post-meta">
+              <time datetime="2026-08-12" class="post-date">August 12, 2026</time>
+              <span class="post-read-time" aria-label="3 minutes read">⏱️ 3 min read</span>
+            </header>
+            <h2 class="post-card-title">
+              <a href="posts/welcome-to-my-blog.html" id="link-welcome">Welcome to DevJournal: The Journey Begins</a>
+            </h2>
+            <p class="post-excerpt">
+              Every journal starts with a single entry. In this opening article, I discuss the motivation behind starting this personal tech space, the architecture of this static blog, and my publishing schedule.
+            </p>
+            <div class="post-tags" aria-label="Article tags">
+              <span class="tag">#webdev</span>
+              <span class="tag">#javascript</span>
+            </div>
+            <a href="posts/welcome-to-my-blog.html" class="post-card-link" aria-label="Read full article on Welcome to DevJournal" id="read-welcome">Read Article →</a>
+          </article>
+
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-copy" id="footer-copy-text">&copy; 2026 DevJournal. Built strictly with HTML &amp; CSS.</div>
+      <ul class="footer-links">
+        <li><a href="index.html" id="footer-link-home">Home</a></li>
+        <li><a href="#" id="footer-link-about">About</a></li>
+        <li><a href="#" id="footer-link-rss">RSS</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

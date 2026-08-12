@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Welcome to DevJournal - DevJournal Tech Blog</title>
+  <meta name="description" content="Welcome to DevJournal! Learn about the motivations behind this blog, its architecture, and what content you can expect.">
+  <link rel="canonical" href="posts/welcome-to-my-blog.html">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <a href="../index.html" class="logo" id="logo-link">DevJournal</a>
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html" id="nav-home">Home</a></li>
+          <li><a href="mastering-css-grids.html" id="nav-latest">Latest Post</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Article Layout -->
+  <main class="post-layout">
+    <!-- Back to Feed Link -->
+    <a href="../index.html" class="post-back-btn" id="post-back-btn">← Back to Articles</a>
+
+    <article>
+      <!-- Article Header Metadata -->
+      <header class="post-header">
+        <div class="post-header-meta">
+          <time datetime="2026-08-12" class="post-header-date">August 12, 2026</time>
+          <span class="post-read-time" aria-label="3 minutes read">⏱️ 3 min read</span>
+        </div>
+        <h1 class="post-title">Welcome to DevJournal: The Journey Begins</h1>
+        <div class="post-author">
+          <div class="post-author-img" aria-hidden="true">AD</div>
+          <span class="post-author-name">by Alex Dev</span>
+        </div>
+      </header>
+
+      <!-- Article Body -->
+      <section class="post-content">
+        <p>Every long journey starts with a single step. For a developer, that step is often writing a "Hello World" application or setting up a brand-new space to write and document what they learn. Today, this space is <strong>DevJournal</strong>.</p>
+
+        <p>DevJournal is a personal tech blog created with a clear objective: to document my coding milestones, share comprehensive tutorials, and outline design/architecture experiments. By committing to publish weekly or daily articles, I hope to not only solidify my own understanding but also help fellow engineers along their path.</p>
+
+        <h2>Why a Static Blog?</h2>
+        <p>When choosing a stack for this blog, my primary requirements were simplicity, speed, and clean responsiveness. I decided to build it strictly using <strong>HTML and CSS</strong>. Here is why:</p>
+        
+        <ul>
+          <li><strong>Lightning-fast speed:</strong> There are no database queries, server-side template executions, or large Javascript bundles loading. It's pure HTML, rendering instantly.</li>
+          <li><strong>Easy deployment:</strong> Because it consists solely of static assets, it can be hosted for free on platforms like GitHub Pages, Netlify, or Vercel.</li>
+          <li><strong>Full control over styling:</strong> By writing vanilla CSS, I avoid the constraints and overhead of heavy CSS frameworks.</li>
+        </ul>
+
+        <blockquote>
+          <p>"Simplicity is the ultimate sophistication." — Leonardo da Vinci. This quote forms the core design principle behind this entire website layout.</p>
+        </blockquote>
+
+        <h2>What's Coming Next?</h2>
+        <p>I plan to write about modern front-end development, responsive styling techniques, clean APIs, and backend architectures. Here is a small preview of the CSS block styling we'll use for code snippets in upcoming posts:</p>
+
+        <pre><code><span class="token comment">/* A clean modern responsive box styling */</span>
+<span class="token keyword">.responsive-box</span> {
+  <span class="token keyword">display</span>: grid;
+  <span class="token keyword">grid-template-columns</span>: <span class="token string">repeat(auto-fit, minmax(250px, 1fr))</span>;
+  <span class="token keyword">gap</span>: <span class="token string">1.5rem</span>;
+}</code></pre>
+
+        <p>Thank you for stopping by! Be sure to check back weekly for detailed guides. If you are ready to learn about layout design, check out my next article on mastering grids.</p>
+      </section>
+    </article>
+
+    <!-- Post Navigation Links -->
+    <nav class="post-navigation" aria-label="Post navigation">
+      <div class="post-nav-card" style="visibility: hidden;">
+        <span class="post-nav-label">Previous Post</span>
+        <span class="post-nav-title">None</span>
+      </div>
+      <a href="mastering-css-grids.html" class="post-nav-card next" id="next-post-link">
+        <span class="post-nav-label">Next Post →</span>
+        <span class="post-nav-title">Mastering CSS Grid: Building Responsive Layouts</span>
+      </a>
+    </nav>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container">
+      <div class="footer-copy" id="footer-copy-text">&copy; 2026 DevJournal. Built strictly with HTML &amp; CSS.</div>
+      <ul class="footer-links">
+        <li><a href="../index.html" id="footer-link-home">Home</a></li>
+        <li><a href="#" id="footer-link-about">About</a></li>
+        <li><a href="#" id="footer-link-rss">RSS</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
