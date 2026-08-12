@@ -471,6 +471,15 @@ article img {
   box-shadow: var(--shadow-md);
 }
 
+.post-featured-image {
+  margin: 0 0 2rem 0;
+}
+
+.post-featured-image img {
+  width: 100%;
+  margin: 0;
+}
+
 /* Post navigation page footer */
 .post-navigation {
   display: flex;
